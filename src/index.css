@@ -9,7 +9,8 @@
   @apply selection:bg-primary selection:text-on-primary cursor-pointer;
 }
 
-button {
+button,
+.btn-metallic-orange {
   @apply cursor-default;
 }
 
