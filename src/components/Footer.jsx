@@ -66,7 +66,7 @@ export default function Footer({ onNewsletterClick }) {
               DS4B
             </h3>
             <p className="text-sm text-on-surface-variant leading-relaxed">
-              DataScience ForBusiness. Transformamos candidatos invisibles en candidatos contratables en 45 días con STITCH.
+              Transformamos candidatos invisibles en candidatos contratables en 45 días. El sistema diseñado para analistas y científicos de datos.
             </p>
           </motion.div>
 

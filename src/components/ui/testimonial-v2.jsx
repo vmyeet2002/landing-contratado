@@ -5,7 +5,7 @@ import { Sun, Moon } from 'lucide-react';
 // --- Data ---
 const testimonials = [
   {
-    text: "Llevo 8 meses buscando trabajo en data science y estaba a punto de rendirme. Con stitch cambió todo: mejoré mi LinkedIn, pulí mi CV y en 6 semanas tenía 3 ofertas. Ahora trabajo en una startup que paga un 30% más. ¡Increíble!",
+    text: "Llevo 8 meses buscando trabajo en data science y estaba a punto de rendirme. Con nuestro programa cambió todo: mejoré mi LinkedIn, pulí mi CV y en 6 semanas tenía 3 ofertas. Ahora trabajo en una startup que paga un 30% más. ¡Increíble!",
     image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=150&h=150",
     name: "Carlos Mendez",
     role: "Data Scientist | Startup Tech",
@@ -29,7 +29,7 @@ const testimonials = [
     role: "Junior Data Scientist | Agencia",
   },
   {
-    text: "Mi presencia online era inexistente. Después de seguir los pasos de stitch, publiqué content sobre análisis de datos y linkedin empezó a traerme oportunidades sin aplicar. Trabajo soñado encontrado.",
+    text: "Mi presencia online era inexistente. Después de seguir nuestro programa, publiqué content sobre análisis de datos y linkedin empezó a traerme oportunidades sin aplicar. Trabajo soñado encontrado.",
     image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=150&h=150",
     name: "Pedro Sánchez",
     role: "Data Engineer | Consultora",

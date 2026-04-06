@@ -11,7 +11,7 @@ export default function Header() {
           transition={{ type: "spring", stiffness: 400, damping: 10 }}
           className=""
         >
-          <img alt="Stitch Logo" className="h-8" src={stitchLogo} />
+          <img alt="DS4B Logo" className="h-8" src={stitchLogo} />
         </motion.div>
       </div>
       <div className="h-px w-full bg-gradient-to-r from-transparent via-outline-variant/20 to-transparent"></div>
