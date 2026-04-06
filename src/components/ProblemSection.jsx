@@ -22,7 +22,7 @@ export default function ProblemSection() {
               {problems.map((item, idx) => (
                 <motion.li
                   key={idx}
-                  className="flex gap-4 items-start cursor-pointer group"
+                  className="flex gap-4 items-start group"
                   initial={{ opacity: 0, x: -30 }}
                   whileInView={{ opacity: 1, x: 0 }}
                   viewport={{ once: true }}
