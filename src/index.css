@@ -6,12 +6,12 @@
 @tailwind utilities;
 
 * {
-  @apply selection:bg-primary selection:text-on-primary cursor-pointer;
+  @apply selection:bg-primary selection:text-on-primary cursor-default;
 }
 
 button,
 .btn-metallic-orange {
-  @apply cursor-default;
+  @apply cursor-pointer;
 }
 
 body {
