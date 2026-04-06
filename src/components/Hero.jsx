@@ -66,6 +66,7 @@ export default function Hero() {
             <motion.a
               href="#offer"
               className="btn-metallic-orange text-on-primary px-10 py-5 rounded-full font-bold text-lg relative"
+              style={{ cursor: 'pointer' }}
               whileHover={{
                 scale: 1.12,
                 boxShadow: "0 20px 60px rgba(255, 143, 111, 0.6)"
