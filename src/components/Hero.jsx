@@ -3,6 +3,13 @@ import ShimmerText from './ShimmerText';
 import { useEffect, useRef } from 'react';
 
 export default function Hero() {
+  const handleScrollToOffer = () => {
+    const offerSection = document.getElementById('offer');
+    if (offerSection) {
+      offerSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   const avatarImages = [
     "https://lh3.googleusercontent.com/aida-public/AB6AXuAVnM4taTqYszT7BBMa0-9piOo3czDtOlx-HUXDXdl7CqE40w7NFjCecCeAsv4_hvaLmfsF3L7A-cchp2XbqsYnN3YRmTf9gB4Ex8IivgTpjlWPH5H42pxQMaYdevzJUsFT0_Qb_ERcZYxt5OknxVz8JRFrRNPW5p7CDQsgpT6SxFCh0kJWQvAE3FVzrvxmRdqqV4thGki4YAUOuqVysQQob2q8VjXQ611yT9mbh-XXKhC1DA0ItlNIs_CDh3Z-ADTH3iu5C_JJQ5U",
     "https://lh3.googleusercontent.com/aida-public/AB6AXuAi5qRVva5NOJAzKRqB7AAL5Ayy3qya1Wp1WP1pszl63BxIvfcy86sRsgIszXzrFV1y_rwPUMPrsk5RMOFsbtSo7nd0vuStI6nGSwopgKMXrv7aRMvvpOrXWInzEaUopeB6SJ8khNrSV8RZjzfw-fziKOrMtbl1xFpATLUsSWD8-0-qRwOpmjuLM0ZHQILAUmHZzP3uQd8B2Ya_mZnd24P9AkE8Y6nzBai7Hn7VhD_Zyz9Gn0OubFrQJhJdISoWByu6Hw2G2ktAvP8",
@@ -63,8 +70,8 @@ export default function Hero() {
             variants={itemVariants}
             className="flex flex-col sm:flex-row gap-6 items-start sm:items-center"
           >
-            <motion.a
-              href="#offer"
+            <motion.button
+              onClick={handleScrollToOffer}
               className="btn-metallic-orange text-on-primary px-10 py-5 rounded-full font-bold text-lg relative"
               style={{ cursor: 'pointer' }}
               whileHover={{
@@ -83,7 +90,7 @@ export default function Hero() {
                 }}
                 transition={{ duration: 2.5, repeat: Infinity }}
               />
-            </motion.a>
+            </motion.button>
 
             <motion.div
               className="flex items-center gap-3"
