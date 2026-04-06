@@ -62,7 +62,7 @@ export default function SystemSection() {
                 y: -10,
                 boxShadow: "0 20px 40px rgba(255, 143, 111, 0.2)"
               }}
-              className="group surface-container p-8 rounded-xl hover:bg-surface-bright transition-all duration-500 flex flex-col gap-6 border border-outline-variant/10 cursor-default relative overflow-hidden"
+              className="group surface-container p-8 rounded-xl hover:bg-surface-bright transition-all duration-500 flex flex-col gap-6 border border-outline-variant/10 cursor-pointer relative overflow-hidden"
             >
               {/* Glow effect on hover */}
               <motion.div

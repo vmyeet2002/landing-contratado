@@ -6,11 +6,11 @@
 @tailwind utilities;
 
 * {
-  @apply selection:bg-primary selection:text-on-primary cursor-default;
+  @apply selection:bg-primary selection:text-on-primary cursor-pointer;
 }
 
 button {
-  @apply cursor-pointer;
+  @apply cursor-default;
 }
 
 body {

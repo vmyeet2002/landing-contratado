@@ -99,7 +99,7 @@ export default function OfferSection() {
                   visible: { opacity: 1, x: 0 }
                 }}
                 whileHover={{ x: 10, color: "#ff8f6f" }}
-                className="flex items-center gap-2 text-sm text-on-surface-variant cursor-default"
+                className="flex items-center gap-2 text-sm text-on-surface-variant cursor-pointer"
               >
                 <motion.span
                   className="material-symbols-outlined text-primary text-sm"
@@ -144,7 +144,7 @@ export default function OfferSection() {
             transition={{ delay: 0.6, duration: 0.5 }}
           >
             <motion.div
-              className="flex items-center gap-2 opacity-60 cursor-default"
+              className="flex items-center gap-2 opacity-60 cursor-pointer"
               whileHover={{ opacity: 1, scale: 1.05 }}
             >
               <motion.span
@@ -157,7 +157,7 @@ export default function OfferSection() {
               <span className="text-xs font-label">PAGO 100% SEGURO</span>
             </motion.div>
             <motion.div
-              className="flex items-center gap-2 opacity-60 cursor-default"
+              className="flex items-center gap-2 opacity-60 cursor-pointer"
               whileHover={{ opacity: 1, scale: 1.05 }}
             >
               <motion.span
