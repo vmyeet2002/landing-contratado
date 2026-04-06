@@ -70,27 +70,29 @@ export default function Hero() {
             variants={itemVariants}
             className="flex flex-col sm:flex-row gap-6 items-start sm:items-center"
           >
-            <motion.button
-              onClick={handleScrollToOffer}
-              className="btn-metallic-orange text-on-primary px-10 py-5 rounded-full font-bold text-lg relative"
-              style={{ cursor: 'pointer' }}
+            <motion.div
               whileHover={{
                 scale: 1.12,
-                boxShadow: "0 20px 60px rgba(255, 143, 111, 0.6)"
               }}
               whileTap={{ scale: 0.92 }}
               transition={{ type: "spring", stiffness: 300, damping: 10 }}
             >
-              <span className="relative z-10">Contratar ya</span>
-              <motion.div
-                className="absolute inset-0 rounded-full bg-gradient-to-r from-primary/20 via-primary/40 to-primary/20 -z-10 blur-lg"
-                animate={{
-                  opacity: [0.3, 0.8, 0.3],
-                  scale: [1, 1.1, 1]
-                }}
-                transition={{ duration: 2.5, repeat: Infinity }}
-              />
-            </motion.button>
+              <button
+                onClick={handleScrollToOffer}
+                className="btn-metallic-orange text-on-primary px-10 py-5 rounded-full font-bold text-lg relative"
+                style={{ cursor: 'pointer' }}
+              >
+                <span className="relative z-10">Contratar ya</span>
+                <motion.div
+                  className="absolute inset-0 rounded-full bg-gradient-to-r from-primary/20 via-primary/40 to-primary/20 -z-10 blur-lg"
+                  animate={{
+                    opacity: [0.3, 0.8, 0.3],
+                    scale: [1, 1.1, 1]
+                  }}
+                  transition={{ duration: 2.5, repeat: Infinity }}
+                />
+              </button>
+            </motion.div>
 
             <motion.div
               className="flex items-center gap-3"
