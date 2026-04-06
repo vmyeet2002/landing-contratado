@@ -1,6 +1,6 @@
 import { motion } from 'motion/react';
 
-export default function OfferSection() {
+export default function OfferSection({ onCtaClick }) {
   const features = [
     "Acceso Vitalicio",
     "Plantillas CV & LinkedIn",
@@ -114,26 +114,31 @@ export default function OfferSection() {
           </motion.div>
 
           {/* CTA Button */}
-          <motion.a
-            href="#"
-            className="btn-metallic-orange inline-block w-full sm:w-auto text-on-primary px-16 py-6 rounded-full font-bold text-xl relative"
+          <motion.div
+            className="inline-block w-full sm:w-auto"
             whileHover={{
               scale: 1.12,
-              boxShadow: "0 25px 70px rgba(255, 143, 111, 0.7)"
             }}
             whileTap={{ scale: 0.92 }}
             transition={{ type: "spring", stiffness: 300, damping: 10 }}
+            onClick={onCtaClick}
           >
-            <span className="relative z-10">Comprar Ahora</span>
-            <motion.div
-              className="absolute inset-0 rounded-full bg-gradient-to-r from-primary/20 via-primary/40 to-primary/20 -z-10 blur-lg"
-              animate={{
-                opacity: [0.3, 0.8, 0.3],
-                scale: [1, 1.1, 1]
-              }}
-              transition={{ duration: 2.5, repeat: Infinity }}
-            />
-          </motion.a>
+            <button
+              className="btn-metallic-orange w-full sm:w-auto text-on-primary px-16 py-6 rounded-full font-bold text-xl relative"
+              style={{ cursor: 'pointer' }}
+              type="button"
+            >
+              <span className="relative z-10">Comprar Ahora</span>
+              <motion.div
+                className="absolute inset-0 rounded-full bg-gradient-to-r from-primary/20 via-primary/40 to-primary/20 -z-10 blur-lg pointer-events-none"
+                animate={{
+                  opacity: [0.3, 0.8, 0.3],
+                  scale: [1, 1.1, 1]
+                }}
+                transition={{ duration: 2.5, repeat: Infinity }}
+              />
+            </button>
+          </motion.div>
 
           {/* Trust Indicators */}
           <motion.div

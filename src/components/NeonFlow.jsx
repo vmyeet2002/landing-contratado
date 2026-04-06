@@ -126,6 +126,7 @@ export function NeonFlow({ children, className = "", enableClickInteraction = tr
         className="absolute inset-0 w-full h-full block"
         style={{
           touchAction: 'none',
+          pointerEvents: 'none',
           background: isLoaded ? 'transparent' : 'linear-gradient(135deg, #1a1a1a 0%, #0e0e0e 50%, #1a1a1a 100%)'
         }}
       />
@@ -141,7 +142,7 @@ export function NeonFlow({ children, className = "", enableClickInteraction = tr
       )}
 
       {/* Content Overlay */}
-      <div className="relative z-10 w-full h-full pointer-events-none">
+      <div className="relative z-10 w-full h-full pointer-events-auto">
         {children}
       </div>
 

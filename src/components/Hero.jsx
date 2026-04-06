@@ -2,13 +2,7 @@ import { motion } from 'motion/react';
 import ShimmerText from './ShimmerText';
 import { useEffect, useRef } from 'react';
 
-export default function Hero() {
-  const handleScrollToOffer = () => {
-    const offerSection = document.getElementById('offer');
-    if (offerSection) {
-      offerSection.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
+export default function Hero({ onCtaClick }) {
 
   const avatarImages = [
     "https://lh3.googleusercontent.com/aida-public/AB6AXuAVnM4taTqYszT7BBMa0-9piOo3czDtOlx-HUXDXdl7CqE40w7NFjCecCeAsv4_hvaLmfsF3L7A-cchp2XbqsYnN3YRmTf9gB4Ex8IivgTpjlWPH5H42pxQMaYdevzJUsFT0_Qb_ERcZYxt5OknxVz8JRFrRNPW5p7CDQsgpT6SxFCh0kJWQvAE3FVzrvxmRdqqV4thGki4YAUOuqVysQQob2q8VjXQ611yT9mbh-XXKhC1DA0ItlNIs_CDh3Z-ADTH3iu5C_JJQ5U",
@@ -76,15 +70,16 @@ export default function Hero() {
               }}
               whileTap={{ scale: 0.92 }}
               transition={{ type: "spring", stiffness: 300, damping: 10 }}
+              onClick={onCtaClick}
             >
               <button
-                onClick={handleScrollToOffer}
                 className="btn-metallic-orange text-on-primary px-10 py-5 rounded-full font-bold text-lg relative"
                 style={{ cursor: 'pointer' }}
+                type="button"
               >
                 <span className="relative z-10">Contratar ya</span>
                 <motion.div
-                  className="absolute inset-0 rounded-full bg-gradient-to-r from-primary/20 via-primary/40 to-primary/20 -z-10 blur-lg"
+                  className="absolute inset-0 rounded-full bg-gradient-to-r from-primary/20 via-primary/40 to-primary/20 -z-10 blur-lg pointer-events-none"
                   animate={{
                     opacity: [0.3, 0.8, 0.3],
                     scale: [1, 1.1, 1]
