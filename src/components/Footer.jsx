@@ -63,10 +63,10 @@ export default function Footer({ onNewsletterClick }) {
             transition={{ duration: 0.6 }}
           >
             <h3 className="text-xl font-headline font-bold text-on-background">
-              STITCH
+              DS4B
             </h3>
             <p className="text-sm text-on-surface-variant leading-relaxed">
-              Transformamos candidatos invisibles en candidatos contratables en 45 días. El sistema diseñado para analistas y científicos de datos.
+              DataScience ForBusiness. Transformamos candidatos invisibles en candidatos contratables en 45 días con STITCH.
             </p>
           </motion.div>
 
@@ -168,7 +168,7 @@ export default function Footer({ onNewsletterClick }) {
             transition={{ duration: 0.6, delay: 0.4 }}
           >
             <p className="text-xs text-on-surface-variant uppercase tracking-widest">
-              © 2024 STITCH DATA SCIENCE. TODOS LOS DERECHOS RESERVADOS.
+              © 2024 DATASCIENCE FORBUSINESS. TODOS LOS DERECHOS RESERVADOS.
             </p>
             <div className="flex gap-4 text-xs text-on-surface-variant">
               <a href="#" className="hover:text-primary transition-colors">
