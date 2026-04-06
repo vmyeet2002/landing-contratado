@@ -15,23 +15,23 @@ export default function Footer({ onNewsletterClick }) {
   const socialLinks = [
     {
       label: "YouTube",
-      href: "https://www.youtube.com/@datascience4business",
+      href: "https://www.youtube.com/@DataScienceForBusiness",
       icon: "play_circle"
     },
     {
-      label: "LinkedIn",
-      href: "#",
-      icon: "business"
+      label: "Web",
+      href: "https://datascience4business.com",
+      icon: "globe"
     },
     {
       label: "Instagram",
-      href: "#",
-      icon: "image"
+      href: "https://instagram.com",
+      icon: "photo_camera"
     },
     {
-      label: "Twitter",
-      href: "#",
-      icon: "share"
+      label: "LinkedIn",
+      href: "https://linkedin.com",
+      icon: "business"
     }
   ];
 
