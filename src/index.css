@@ -11,7 +11,7 @@
 
 button,
 .btn-metallic-orange {
-  @apply cursor-pointer;
+  cursor: pointer !important;
 }
 
 body {
